@@ -8,59 +8,76 @@
 <style>
   body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #fffaf3;
+    font-family: Arial, sans-serif;
+    background: #fffaf0;
   }
 
   header {
-    background: linear-gradient(to right, #2e7d32, #66bb6a);
+    background: linear-gradient(90deg, #2e7d32, #66bb6a);
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px;
   }
 
   header h1 {
     margin: 0;
-    font-size: 32px;
   }
 
-  section {
-    padding: 25px;
-    max-width: 900px;
-    margin: auto;
+  nav {
+    background: #ff9800;
+    text-align: center;
+    padding: 10px;
   }
 
-  .highlight {
-    color: #e65100;
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
     font-weight: bold;
   }
 
-  .product-box {
+  section {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .product {
     background: white;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    margin-top: 20px;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
-  .product-box img {
-    width: 200px;
+  .product img {
+    width: 250px;
+    border-radius: 12px;
+  }
+
+  .gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 180px;
     border-radius: 10px;
   }
 
   button {
-    background: #ff9800;
+    background: #ff5722;
+    color: white;
     border: none;
     padding: 12px 20px;
-    color: white;
-    font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
   }
 
   button:hover {
-    background: #e65100;
+    background: #e64a19;
   }
 
   footer {
@@ -68,7 +85,6 @@
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 20px;
   }
 </style>
 </head>
@@ -77,45 +93,61 @@
 
 <header>
   <h1>🌿 Bimal Organic Achar</h1>
-  <p>Authentic Homemade Taste of Nepal</p>
+  <p>Sweet & Spicy Mango + Apple Mix Pickle</p>
 </header>
 
-<section>
-  <h2>🍯 Our Special Product</h2>
+<nav>
+  <a href="#product">Product</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <div class="product-box">
-    <img src="https://via.placeholder.com/200" alt="Achar Image">
+<section id="product">
+  <h2>🍯 Our Signature Product</h2>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1604908177522-4720d8b1c6c4" alt="Achar">
 
     <h3>🥭🍎 Mango + Apple Mix Achar</h3>
 
     <p>
-      A unique fusion of <span class="highlight">sweet apple</span> and 
-      <span class="highlight">tangy mango</span>, blended with traditional Nepali spices.
+      A delicious fusion of tangy mango and sweet apple blended with authentic Nepali spices.
     </p>
 
     <p><b>✔ 100% Organic</b></p>
-    <p><b>✔ No Preservatives</b></p>
-    <p><b>✔ Homemade with Love</b></p>
+    <p><b>✔ No Chemicals</b></p>
+    <p><b>✔ Homemade Taste</b></p>
 
     <h3>Price: Rs. 300</h3>
 
-    <button onclick="orderNow()">Order Now</button>
+    <button onclick="order()">Order Now</button>
   </div>
 </section>
 
-<section>
-  <h2>📖 Why Choose Us?</h2>
-  <ul>
-    <li>Fresh local ingredients</li>
-    <li>Traditional Nepali recipe</li>
-    <li>Healthy and hygienic preparation</li>
-  </ul>
+<section id="gallery">
+  <h2>📸 Product Gallery</h2>
+
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1590080874088-eec64895b423">
+    <img src="https://images.unsplash.com/photo-1615486363973-95f0c1d0a95c">
+    <img src="https://images.unsplash.com/photo-1589308078054-832c4c1e8b9b">
+  </div>
 </section>
 
-<section>
+<section id="about">
+  <h2>📖 About Us</h2>
+  <p>
+    “घरमै बनाइएको अचार – स्वादिलो र स्वास्थ्यकर”
+  </p>
+  <p>
+    Bimal Organic Achar brings traditional Nepali flavors with a modern twist.
+  </p>
+</section>
+
+<section id="contact">
   <h2>📞 Contact</h2>
   <p>Phone: 98XXXXXXXX</p>
-  <p>Location: Kathmandu, Nepal</p>
+  <p>Kathmandu, Nepal</p>
 
   <a href="https://wa.me/97798XXXXXXXX">
     <button>Order via WhatsApp</button>
@@ -123,12 +155,12 @@
 </section>
 
 <footer>
-  <p>© 2026 Bimal Organic Achar</p>
+  <p>© 2026 Bimal Organic Achar | Made with ❤️ in Nepal</p>
 </footer>
 
 <script>
-  function orderNow() {
-    alert("Thank you! Please contact us via phone or WhatsApp to confirm your order.");
+  function order() {
+    alert("Please contact us via WhatsApp or phone to order.");
   }
 </script>
 
