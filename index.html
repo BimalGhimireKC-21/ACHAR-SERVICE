@@ -1,45 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Bimal Organic Achar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #fff8f0;
-    }
-    header {
-      background: #2e7d32;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      padding: 20px;
-    }
-    .product {
-      border: 1px solid #ddd;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 10px;
-      background: white;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-    button {
-      background: #ff9800;
-      border: none;
-      padding: 10px;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bimal Organic Achar</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fffaf3;
+  }
+
+  header {
+    background: linear-gradient(to right, #2e7d32, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+
+  section {
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .highlight {
+    color: #e65100;
+    font-weight: bold;
+  }
+
+  .product-box {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .product-box img {
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  button {
+    background: #ff9800;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #e65100;
+  }
+
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+</style>
 </head>
+
 <body>
+
+<header>
+  <h1>🌿 Bimal Organic Achar</h1>
+  <p>Authentic Homemade Taste of Nepal</p>
+</header>
+
+<section>
+  <h2>🍯 Our Special Product</h2>
+
+  <div class="product-box">
+    <img src="https://via.placeholder.com/200" alt="Achar Image">
+
+    <h3>🥭🍎 Mango + Apple Mix Achar</h3>
+
+    <p>
+      A unique fusion of <span class="highlight">sweet apple</span> and 
+      <span class="highlight">tangy mango</span>, blended with traditional Nepali spices.
+    </p>
+
+    <p><b>✔ 100% Organic</b></p>
+    <p><b>✔ No Preservatives</b></p>
+    <p><b>✔ Homemade with Love</b></p>
+
+    <h3>Price: Rs. 300</h3>
+
+    <button onclick="orderNow()">Order Now</button>
+  </div>
+</section>
+
+<section>
+  <h2>📖 Why Choose Us?</h2>
+  <ul>
+    <li>Fresh local ingredients</li>
+    <li>Traditional Nepali recipe</li>
+    <li>Healthy and hygienic preparation</li>
+  </ul>
+</section>
+
+<section>
+  <h2>📞 Contact</h2>
+  <p>Phone: 98XXXXXXXX</p>
+  <p>Location: Kathmandu, Nepal</p>
+
+  <a href="https://wa.me/97798XXXXXXXX">
+    <button>Order via WhatsApp</button>
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Bimal Organic Achar</p>
+</footer>
+
+<script>
+  function orderNow() {
+    alert("Thank you! Please contact us via phone or WhatsApp to confirm your order.");
+  }
+</script>
+
+</body>
+</html>
