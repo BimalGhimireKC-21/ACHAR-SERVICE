@@ -3,224 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bimal Organic Achar</title>
+<title>Bimal Organic Achar - Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-/* ===== GLOBAL STYLES ===== */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #fffaf0;
-  line-height: 1.6;
-}
-
-header {
-  background: linear-gradient(90deg, #2e7d32, #66bb6a);
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 40px;
-}
-
-nav {
-  background: #ff9800;
-  text-align: center;
-  padding: 12px;
-  position: sticky;
-  top: 0;
-}
-
-nav a {
-  color: white;
-  margin: 0 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 40px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-h2 {
-  text-align: center;
-}
-
-/* ===== HERO ===== */
-.hero {
-  text-align: center;
-}
-
-.hero img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-/* ===== PRODUCT ===== */
-.product {
-  background: white;
-  border-radius: 15px;
-  padding: 25px;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.product img {
-  width: 260px;
-  border-radius: 12px;
-}
-
-.product:hover {
-  transform: scale(1.03);
-  transition: 0.3s;
-}
-
-/* ===== GALLERY ===== */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-/* ===== FEATURES ===== */
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.feature-box {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-/* ===== TESTIMONIAL ===== */
-.testimonial {
-  background: #fff3e0;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
-/* ===== BUTTON ===== */
-button {
-  background: #ff5722;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #e64a19;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+body{margin:0;font-family:'Poppins',sans-serif;background:#fffaf0;}
+header{background:linear-gradient(90deg,#2e7d32,#66bb6a);color:white;text-align:center;padding:50px;}
+nav{display:flex;justify-content:center;gap:20px;background:#ff9800;padding:15px;position:sticky;top:0;}
+nav a{color:white;text-decoration:none;font-weight:bold;}
+section{padding:40px;max-width:1100px;margin:auto;}
+h2{text-align:center;margin-bottom:20px;}
+.card{background:white;padding:20px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);margin:10px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.gallery img{width:100%;border-radius:10px;}
+button{background:#ff5722;color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;}
+footer{background:#333;color:white;text-align:center;padding:20px;}
 </style>
 </head>
 
 <body>
-
 <header>
-  <h1>🌿 Bimal Organic Achar</h1>
-  <p>Premium Mango 🍎 + Apple 🥭 Mix Pickle</p>
+<h1>🌿 Bimal Organic Achar</h1>
+<p>Premium Mango + Apple Fusion Pickle</p>
 </header>
 
 <nav>
-  <a href="#home">Home</a>
-  <a href="#product">Product</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#features">Features</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#contact">Contact</a>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#gallery">Gallery</a>
+<a href="#process">Process</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<section id="home" class="hero">
-  <img src="https://images.unsplash.com/photo-1625944525903-c9c6b5c4b4b7">
-  <h2>Authentic Homemade Taste of Nepal</h2>
+<section id="home">
+<h2>Welcome</h2>
+<p>We bring authentic Nepali achar with organic ingredients and traditional taste.</p>
 </section>
 
-<section id="product">
-  <h2>🍯 Signature Product</h2>
-  <div class="product">
-    <img src="https://images.unsplash.com/photo-1604908177522-4720d8b1c6c4">
-    <h3>Mango + Apple Mix Achar</h3>
-    <p>Sweet apple + tangy mango with Nepali spices.</p>
-    <p><b>Price: Rs. 300</b></p>
-    <button onclick="order()">Order Now</button>
-  </div>
+<section id="menu">
+<h2>📜 Full Menu</h2>
+<div class="grid">
+<div class="card">🥭 Mango Achar - Rs.250</div>
+<div class="card">🍎 Apple Achar - Rs.220</div>
+<div class="card">🥭🍎 Mix Achar - Rs.300</div>
+<div class="card">🌶 Spicy Mix - Rs.280</div>
+<div class="card">Garlic Achar - Rs.260</div>
+<div class="card">Lemon Achar - Rs.200</div>
+<div class="card">Tomato Achar - Rs.230</div>
+<div class="card">Radish Achar - Rs.210</div>
+</div>
 </section>
 
 <section id="gallery">
-  <h2>📸 Gallery</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1590080874088-eec64895b423">
-    <img src="https://images.unsplash.com/photo-1615486363973-95f0c1d0a95c">
-    <img src="https://images.unsplash.com/photo-1589308078054-832c4c1e8b9b">
-    <img src="https://images.unsplash.com/photo-1587731556938-38755b4803a6">
-    <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce">
-    <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e">
-  </div>
+<h2>📸 Large Gallery</h2>
+<div class="grid gallery">
+<img src="https://images.unsplash.com/photo-1590080874088-eec64895b423">
+<img src="https://images.unsplash.com/photo-1615486363973-95f0c1d0a95c">
+<img src="https://images.unsplash.com/photo-1589308078054-832c4c1e8b9b">
+<img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce">
+<img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e">
+<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc">
+<img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+</div>
 </section>
 
-<section id="features">
-  <h2>🌟 Why Choose Us</h2>
-  <div class="features">
-    <div class="feature-box">100% Organic</div>
-    <div class="feature-box">Homemade Quality</div>
-    <div class="feature-box">No Preservatives</div>
-    <div class="feature-box">Fresh Ingredients</div>
-  </div>
+<section id="process">
+<h2>🛠 Our Process</h2>
+<div class="grid">
+<div class="card">Step 1: Fresh fruit selection</div>
+<div class="card">Step 2: Natural drying</div>
+<div class="card">Step 3: Spice mixing</div>
+<div class="card">Step 4: Hygienic packaging</div>
+</div>
 </section>
 
-<section id="reviews">
-  <h2>💬 Customer Reviews</h2>
-  <div class="testimonial">"Best achar I ever tasted!" ⭐⭐⭐⭐⭐</div>
-  <div class="testimonial">"Perfect balance of sweet and spicy." ⭐⭐⭐⭐⭐</div>
-  <div class="testimonial">"Feels like homemade from village." ⭐⭐⭐⭐</div>
+<section>
+<h2>🌟 Features</h2>
+<div class="grid">
+<div class="card">100% Organic</div>
+<div class="card">No Preservatives</div>
+<div class="card">Homemade</div>
+<div class="card">Healthy</div>
+</div>
+</section>
+
+<section>
+<h2>💬 Reviews</h2>
+<div class="card">Excellent taste ⭐⭐⭐⭐⭐</div>
+<div class="card">Loved it ⭐⭐⭐⭐</div>
+<div class="card">Best pickle ⭐⭐⭐⭐⭐</div>
+<div class="card">Very fresh ⭐⭐⭐⭐</div>
+</section>
+
+<section id="faq">
+<h2>❓ FAQ</h2>
+<div class="card">Q: Is it organic? A: Yes</div>
+<div class="card">Q: Delivery? A: Available</div>
+<div class="card">Q: Shelf life? A: 6 months</div>
+<div class="card">Q: Payment? A: Cash/Online</div>
 </section>
 
 <section id="contact">
-  <h2>📞 Contact</h2>
-  <p>Phone: 98XXXXXXXX</p>
-  <p>Kathmandu, Nepal</p>
-  <a href="https://wa.me/97798XXXXXXXX"><button>Order via WhatsApp</button></a>
+<h2>📞 Contact</h2>
+<form>
+<input placeholder="Name"><br><br>
+<input placeholder="Phone"><br><br>
+<textarea placeholder="Message"></textarea><br><br>
+<button>Submit</button>
+</form>
 </section>
 
 <footer>
-  <p>© 2026 Bimal Organic Achar</p>
+<p>© 2026 Bimal Organic Achar</p>
 </footer>
 
 <script>
-function order(){
-  alert("Order via WhatsApp or phone.");
-}
+console.log("Premium site loaded");
 </script>
 
 </body>
